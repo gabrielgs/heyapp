@@ -21,6 +21,7 @@ export default {
   background: $primary;
   display: flex;
   align-items: center;
+  grid-area: header;
   justify-content: space-between;
   width: 100%;
   padding: 10px 24px;
