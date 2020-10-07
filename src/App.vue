@@ -3,6 +3,7 @@
     <Header />
     <ChatList />
     <MessagePanel />
+    <InfoPanel />
   </div>
 </template>
 
@@ -10,12 +11,14 @@
 import Header from "@/components/Header";
 import ChatList from "@/components/ChatList";
 import MessagePanel from "@/components/MessagePanel";
+import InfoPanel from "@/components/InfoPanel";
 
 export default {
   components: {
     ChatList,
     Header,
     MessagePanel,
+    InfoPanel,
   },
 };
 </script>
