@@ -11,6 +11,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "InputSearch",
+};
+</script>
+
 <style lang="scss" scoped>
 .input-group {
   display: flex;
@@ -36,7 +42,7 @@
     }
 
     &::placeholder {
-      color:$secondary-text;
+      color: $secondary-text;
     }
   }
 }

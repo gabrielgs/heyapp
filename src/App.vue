@@ -2,7 +2,9 @@
   <div id="app"></div>
 </template>
 
-<script></script>
+<script>
+export default {};
+</script>
 
 <style lang="scss">
 @import "./sass/_basic.scss";
