@@ -1,27 +1,27 @@
 <template>
-  <li class="chat-item">
+  <li :class="['chat-item', {active: customer.active}]">
     <div class="chat-item__avatar">
       <div class="chat-item__avatar-container">
         <img
           class="chat-item__avatar-image"
-          src="@/assets/avatar-customer.jpg"
+          :src="require(`../assets/${customer.avatarImage}.jpg`)"
           alt="Avatar Cutomer"
         />
         <img
           class="chat-item__platform"
-          src="@/assets/icons/whatsapp.svg"
+          :src="require(`../assets/icons/${customer.iconPlatform}.svg`)"
           alt="icon-whatssapp"
         />
-        <div class="chat-item__online"></div>
+        <div v-if="customer.isOnline" class="chat-item__online"></div>
       </div>
     </div>
     <div class="chat-item__info">
       <div class="chat-item__info-container">
-        <span class="chat-item__name">Jane Cooper</span>
+        <span class="chat-item__name">{{ customer.name }}</span>
         <span class="chat-item__date">hace 10 minutos</span>
       </div>
       <span class="chat-item__message"
-        >Ya he realizado las recomendaciones ...</span
+        >{{ customer.message }}</span
       >
     </div>
   </li>
@@ -30,6 +30,11 @@
 <script>
 export default {
   name: "ChatListItem",
+  props: {
+    customer: {
+      type: Object,
+    },
+  },
 };
 </script>
 
@@ -82,7 +87,6 @@ export default {
 
   &__info {
     width: 100%;
-    padding-right: 20px;
   }
 
   &__info-container {
@@ -91,7 +95,7 @@ export default {
   }
 
   &__name {
-    font-weight: bold;
+    font-weight: 400;
   }
 
   &__date {
@@ -101,6 +105,20 @@ export default {
   &__date,
   &__message {
     font-size: 12px;
+  }
+
+  &__message {
+    color: $secondary-text;
+  }
+
+  &.active {
+    .chat-item__name {
+      font-weight: bold;
+    }
+
+    .chat-item__message {
+      color: #000;
+    }
   }
 }
 </style>
