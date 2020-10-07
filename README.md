@@ -1,7 +1,7 @@
 # heyapp
 
 ## Puedes verlo aquí
-[https://heyapp.surge.sh](https://heyapp.surge.sh/t)
+[https://heyapp.surge.sh](https://heyapp.surge.sh)
 
 ## Project setup
 ```
