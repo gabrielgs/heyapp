@@ -2,20 +2,20 @@
   <div id="app">
     <Header />
     <ChatList />
-    <Message />
+    <MessagePanel />
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header";
 import ChatList from "@/components/ChatList";
-import Message from "@/components/Message";
+import MessagePanel from "@/components/MessagePanel";
 
 export default {
   components: {
     ChatList,
     Header,
-    Message,
+    MessagePanel,
   },
 };
 </script>
