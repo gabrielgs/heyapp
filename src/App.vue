@@ -2,17 +2,22 @@
   <div id="app">
     <Header />
     <ChatList />
+    <div class="main">
+      <MessageHeader />
+    </div>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header";
 import ChatList from "@/components/ChatList";
+import MessageHeader from "@/components/MessageHeader";
 export default {
   components: {
     ChatList,
     Header,
-  },
+    MessageHeader,
+  }
 };
 </script>
 
@@ -24,6 +29,11 @@ export default {
   grid-template-rows: max-content;
   grid-template-areas:
     "header   header header"
-    "chatlist main   aside";
+    "chatlist main   aside"
+  ;
+
+  .main {
+    grid-area: main;
+  }
 }
 </style>
