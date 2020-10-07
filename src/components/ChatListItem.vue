@@ -1,5 +1,5 @@
 <template>
-  <li :class="['chat-item', {active: customer.active}]">
+  <li :class="['chat-item', { active: customer.active }]">
     <div class="chat-item__avatar">
       <div class="chat-item__avatar-container">
         <img
@@ -20,9 +20,7 @@
         <span class="chat-item__name">{{ customer.name }}</span>
         <span class="chat-item__date">hace 10 minutos</span>
       </div>
-      <span class="chat-item__message"
-        >{{ customer.message }}</span
-      >
+      <span class="chat-item__message">{{ customer.message }}</span>
     </div>
   </li>
 </template>

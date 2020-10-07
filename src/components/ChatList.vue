@@ -22,31 +22,31 @@ export default {
     return {
       customers: [
         {
-          name: 'Jane Cooper',
-          message: 'Ya he realizado las recomendaciones ...',
-          avatarImage: 'avatar-customer',
+          name: "Jane Cooper",
+          message: "Ya he realizado las recomendaciones ...",
+          avatarImage: "avatar-customer",
           isOnline: true,
-          iconPlatform: 'whatsapp',
+          iconPlatform: "whatsapp",
           active: true,
         },
         {
-          name: 'Ronald Richards',
-          message: 'Hola, buenos dias',
-          avatarImage: 'avatar-customer2',
+          name: "Ronald Richards",
+          message: "Hola, buenos dias",
+          avatarImage: "avatar-customer2",
           isOnline: false,
-          iconPlatform: 'messenger',
+          iconPlatform: "messenger",
           active: false,
         },
         {
-          name: 'Jane Cooper',
-          message: 'He tenido problemas con mi conexión ...',
-          avatarImage: 'avatar-customer3',
+          name: "Jane Cooper",
+          message: "He tenido problemas con mi conexión ...",
+          avatarImage: "avatar-customer3",
           isOnline: false,
-          iconPlatform: 'telegram',
+          iconPlatform: "telegram",
           active: false,
-        }
-      ]
-    }
+        },
+      ],
+    };
   },
 
   components: {
@@ -57,12 +57,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .chatlist {
-    grid-area: chatlist;
-    width: 320px;
+.chatlist {
+  grid-area: chatlist;
+  width: 320px;
 
-    &__search {
-      padding: 8px 16px;
-    }
+  &__search {
+    padding: 8px 16px;
   }
+}
 </style>

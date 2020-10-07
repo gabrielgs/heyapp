@@ -12,7 +12,7 @@ export default {
   components: {
     ChatList,
     Header,
-  }
+  },
 };
 </script>
 
@@ -24,7 +24,6 @@ export default {
   grid-template-rows: max-content;
   grid-template-areas:
     "header   header header"
-    "chatlist main   aside"
-  ;
+    "chatlist main   aside";
 }
 </style>
