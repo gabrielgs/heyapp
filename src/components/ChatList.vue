@@ -58,6 +58,7 @@ export default {
 
 <style lang="scss" scoped>
 .chatlist {
+  border: 1px solid #f3f6fd;
   grid-area: chatlist;
   width: 320px;
 

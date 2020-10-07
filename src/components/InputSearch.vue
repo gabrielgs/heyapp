@@ -24,6 +24,7 @@ export default {
 
   .button-search {
     background: $secondary;
+    cursor: pointer;
     display: flex;
     padding: 8px 8px 8px 16px;
     border-radius: 100px 0 0 100px;

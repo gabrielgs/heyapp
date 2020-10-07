@@ -13,6 +13,7 @@
   border-radius: 4px;
   background: $primary;
   color: $secondary-light;
+  cursor: pointer;
   font-size: 16px;
   padding: 10px 16px;
 
