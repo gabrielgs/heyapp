@@ -17,7 +17,7 @@ export default {
     ChatList,
     Header,
     MessageHeader,
-  }
+  },
 };
 </script>
 
@@ -29,8 +29,7 @@ export default {
   grid-template-rows: max-content;
   grid-template-areas:
     "header   header header"
-    "chatlist main   aside"
-  ;
+    "chatlist main   aside";
 
   .main {
     grid-area: main;
