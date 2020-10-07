@@ -33,6 +33,11 @@ export default {
   height: 32px;
   margin-right: 10px;
 
+  .emoji,
+  .files {
+    cursor: pointer;
+  }
+
   .emoji {
     margin-right: 16px;
   }

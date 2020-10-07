@@ -42,6 +42,7 @@ export default {
   }
 
   &__action {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
