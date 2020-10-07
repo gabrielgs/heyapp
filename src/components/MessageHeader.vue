@@ -18,6 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .message-header {
+  border: 1px solid #f3f6fd;
   display: flex;
   align-items: center;
   justify-content: space-between;
